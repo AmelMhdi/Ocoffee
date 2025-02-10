@@ -10,8 +10,9 @@
   --title-color: #313131;
   --light-color: #EDD6C8;
   --paragraph-color: #797979;
-  --background-primary-color: #FFFFFF;
+  --background-primary-color: #F4F4F4;
   --background-secondary-color: #774A2F;
+  --background-light-color: #F9F9F9;
   --button-color: #C67C4E;
   --button-text-color: #FFFFFF;
   --button-background-color: #EDD6C8;
@@ -168,7 +169,7 @@ nav {
 }
 
 .hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(6px, 6px);
+  transform: rotate(45deg) translate(10px, 5px);
 }
 
 .hamburger-icon.open span:nth-child(2) {
@@ -176,7 +177,7 @@ nav {
 }
 
 .hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(6px, -6px);
+  transform: rotate(-45deg) translate(10px, -5px);
 }
 
 /* DEFAULT */

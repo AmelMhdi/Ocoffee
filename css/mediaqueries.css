@@ -39,13 +39,8 @@
     display: none;
   }
 
-  .nav-logo img {
-    width: 80%;
-  }
-
   #hamburger-nav {
     display: flex; 
-    justify-content: flex-end;
     justify-content: space-between;
     padding: 10px 20px;
     background-color: var(--background-secondary-color);
@@ -71,6 +66,10 @@
     margin: 0 auto 1rem;
   }
 
+  .section__title {
+    text-align: center;
+  }
+
   .section__text-container {
     text-align: left;
     padding: 1rem;
@@ -91,8 +90,16 @@
     padding: 1rem;
   }
 
-
   .new-arrivals__details {
     flex-direction: column;
+  }
+
+  .new-arrivals__1,
+  .new-arrivals__2,
+  .new-arrivals__3 {
+    padding: 2.5rem 0;
+    margin: 1rem 0;
+    background-color: #EDEDED;
+    border-radius: .5rem;
   }
 }
