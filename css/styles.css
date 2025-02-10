@@ -201,7 +201,7 @@ nav {
 
 section {
   padding-top: 4vh;
-  height: 50vh;
+  /* height: 50vh; */
   margin: 0 5rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -210,16 +210,17 @@ section {
   justify-content: center;
 }
 
-.presentation-container {
+#presentation-container {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: nowrap;
   justify-content: center;
   background-color: var(--light-color);
   margin: 0;
+  padding-bottom: 2rem;
 }
 
-.presentation-container img {
+#presentation-container img {
   width: 100%;
 }
 
@@ -252,6 +253,7 @@ section {
 .btn-catalogue {
   background-color: var(--button-color);
   padding: 1rem 3rem;
+  cursor: pointer;
 }
 
 .btn-new-arrivals {
@@ -263,7 +265,7 @@ section {
 
 /* NEW ARRIVALS */
 
-.new-arrivals-container {
+#new-arrivals-container {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;   
@@ -289,4 +291,63 @@ section {
     align-items: center;   
     justify-content: center;
     margin: 0 1rem;
+}
+
+/* CATALOGUE */
+
+#catalogue-container {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.coffee-list {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: flex-start;
+  gap: 2rem; 
+  margin-top: 2rem;
+}
+
+.coffee-list .coffee-list-image {
+  width: 100%;
+}
+
+.coffee-list .coffee-list-image img {
+  width: 100%;
+  height: auto;
+}
+
+.coffee-list > * {
+  flex-basis: calc(33% - 2rem);
+  /* Set initial width of each coffee item 2rem is the gap between items*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.coffee-item {
+  text-align: left;
+  width: 100%; /* Occupy full width available to the container */
+}
+
+.coffee-item h2 {
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.coffee-list__p {
+  margin-bottom: 0.25rem;
+  text-align: left;
+}
+
+.coffee-item strong {
+  font-weight: bold;
 }
