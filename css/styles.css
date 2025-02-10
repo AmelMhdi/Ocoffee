@@ -13,6 +13,7 @@
   --background-primary-color: #F4F4F4;
   --background-secondary-color: #774A2F;
   --background-light-color: #F9F9F9;
+  --background-arrivals-color: #EDEDED;
   --button-color: #C67C4E;
   --button-text-color: #FFFFFF;
   --button-background-color: #EDD6C8;
@@ -222,6 +223,7 @@ section {
 
 #presentation-container img {
   width: 100%;
+  padding-right: 2rem;
 }
 
 .section__text-container {
@@ -278,7 +280,7 @@ section {
 .new-arrivals__details {
   display: flex;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 1.5rem 0 0;
   flex: 1;
   text-align: center;
 }
@@ -291,6 +293,10 @@ section {
     align-items: center;   
     justify-content: center;
     margin: 0 1rem;
+    background-color: var(--background-arrivals-color);
+    padding: 2.5rem 1.5rem;
+    border-radius: .5rem;
+
 }
 
 /* CATALOGUE */
@@ -311,30 +317,49 @@ section {
   margin-top: 2rem;
 }
 
-.coffee-list .coffee-list-image {
-  width: 100%;
-}
-
-.coffee-list .coffee-list-image img {
-  width: 100%;
-  height: auto;
-}
-
-.coffee-list > * {
-  flex-basis: calc(33% - 2rem);
-  /* Set initial width of each coffee item 2rem is the gap between items*/
+.coffee-list .coffee-item {
+  flex-basis: calc(33.33% - 2rem); /* Adjust for the gap */
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
   border: 1px solid #ccc;
   padding: 1rem;
   border-radius: 5px;
-  box-sizing: border-box;
+  margin-bottom: 1rem; /* Add spacing between rows */
 }
 
-.coffee-item {
+.coffee-list .coffee-item .coffee-list-image {
+  width: 100%;
+  margin-bottom: 1rem; 
+}
+
+.coffee-list .coffee-item .coffee-list-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.coffee-list .coffee-item .coffee-list__p {
   text-align: left;
-  width: 100%; /* Occupy full width available to the container */
+}
+
+
+/* Hidden Items */
+.coffee-item.hidden {
+  display: none;
+}
+
+/* "See More" Button */
+.display-all-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  display: none; /* Hidden by default */
 }
 
 .coffee-item h2 {
