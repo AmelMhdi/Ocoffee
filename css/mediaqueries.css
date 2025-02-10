@@ -43,7 +43,7 @@
     display: flex; 
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: var(--background-secondary-color);
+    background-color: var(--background-dark-color);
   }
 
   .hamburger__nav-title{
@@ -97,12 +97,16 @@
     flex-direction: column;
   }
 
+  .new-arrivals__text {
+    padding: 0 1.5rem;
+  }
+
   .new-arrivals__1,
   .new-arrivals__2,
   .new-arrivals__3 {
     padding: 2.5rem 0;
     margin: 1rem 0;
-    background-color: var(--background-arrivals-color);
+    background-color: var(--background-items-color);
     border-radius: .5rem;
   }
 
