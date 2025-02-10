@@ -11,6 +11,7 @@
   --section-title: #313131;
   --background-dark-color: #774A2F;
   --background-items-color: #EDEDED;
+  --border-items-color: #cecece;
   --button-text-color: #FFFFFF;
   --button-background-color: #EDD6C8;
   --button-background-color-2: #C67C4E;
@@ -30,7 +31,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* DESKTOP NAV */
+/* DESKTOP -ti */
 
 #nav-bar {
   display: flex;
@@ -63,7 +64,7 @@ nav {
 
 .nav-title {
   font-family: "Orelega One", serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--primary-color-3);
 }
 
@@ -197,15 +198,11 @@ nav {
   transform: none;
 }
 
-/* MAIN */
-
 /* PRESENTATION CONTAINER */
 
 section {
   padding-top: 4vh;
   margin: 0 5rem;
-  /* box-sizing: border-box; */
-  min-height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,7 +219,6 @@ section {
 
 #presentation-container img {
   width: 100%;
-  
 }
 
 .section__text-container {
@@ -298,10 +294,10 @@ button {
     align-items: center;   
     justify-content: center;
     margin: 0 1rem;
+    border: 1px solid var(--border-items-color);
     background-color: var(--background-items-color);
     padding: 2.5rem 1.5rem;
     border-radius: .5rem;
-
 }
 
 /* CATALOGUE */
@@ -312,6 +308,11 @@ button {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
+}
+
+#catalogue h2 {
+  font-size: 2rem;
+  font-weight: none;
 }
 
 .coffee-list {
@@ -327,18 +328,11 @@ button {
 }
 
 .coffee-list .coffee-item {
-  /* flex-basis: calc(33.33% - 2rem);  */
-  /* box-sizing: border-box; */
   display: flex;
   flex-direction: column;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-items-color);
   padding: 1rem;
   border-radius: 5px;
-  margin-bottom: 1rem; 
-}
-
-.coffee-list .coffee-item .coffee-list-image {
-  width: 100%;
   margin-bottom: 1rem; 
 }
 
@@ -352,13 +346,14 @@ button {
   text-align: left;
 }
 
-
 /* HIDDEN ITEMS */
+
 .coffee-item.hidden {
   display: none;
 }
 
 /* DISPLAY-ALL BUTTON */
+
 .display-all-btn {
   background-color: var(--primary-color);
   color: white;
@@ -366,7 +361,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-top: 1rem;
   display: none; 
 }
@@ -375,11 +370,6 @@ button {
   margin-bottom: 0.5rem;
   color: var(--primary-color-2);
   text-align: center;
-}
-
-.coffee-list__p {
-  margin-bottom: 0.25rem;
-  text-align: left;
 }
 
 .coffee-item strong {
