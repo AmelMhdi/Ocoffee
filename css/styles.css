@@ -218,12 +218,12 @@ section {
   justify-content: center;
   background-color: var(--light-color);
   margin: 0;
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 
 #presentation-container img {
   width: 100%;
-  padding-right: 2rem;
+  
 }
 
 .section__text-container {
