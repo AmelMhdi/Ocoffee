@@ -1,0 +1,112 @@
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/mediaqueries.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav id="nav-bar">
+
+    <div class="logo-title">
+      <div class="nav-logo">
+        <img
+        src="../../S09-ocoffee-AmelMhdi/docs/demande-client/00.assets/logo.svg"
+        alt="Logo oCoffe">
+      </div>
+      <div class="nav-title">
+        <h1 class="nav-title">oCoffee</h1>
+      </div>
+    </div>  
+    
+
+    <div class="nav-links">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#catalogue">Catalogue</a></li>
+        <li><a href="#boutique">Boutique</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="hamburger__logo-title">
+      <div class="hamburger__nav-logo">
+        <img
+        src="../../S09-ocoffee-AmelMhdi/docs/demande-client/00.assets/logo.svg"
+        alt="Logo oCoffee">
+      </div>
+      <div class="hamburger__nav-title">oCoffee</div>
+    </div>
+        <div class="hamburger-menu">
+          <button class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+            <div class="menu-links">
+              <ul>
+                <li><a href="#accueil" onclick="toggleMenu()">Accueil</a></li>
+                <li><a href="#catalogue" onclick="toggleMenu()">Catalogue</a></li>
+                <li><a href="#boutique" onclick="toggleMenu()">Boutique</a></li>
+              </ul>
+            </div>
+        </div>
+  </nav>
+
+  <main id="presentation">
+
+    <section class="presentation-container">
+      <div class="section__pic-container">
+        <img src="../../S09-ocoffee-AmelMhdi/docs/demande-client/00.assets/about.jpg" alt="Photo de tasses de café alignées en cercle">
+      </div>
+
+      <div class="section__text-container">
+        
+        <h1 class="section__title">oCoffee</h1>
+        <p class="section__text__p">
+          Jean et Jacques Pepper, deux frères passionnés par le café, sont les fondateurs de notre boutique. Avec une expertise approfondie et un amour profond pour cette délicieuse boisson, ils ont créé un espace où le café est célébré comme une expérience raffinée et inspirante.
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn-container btn-catalogue"
+            onclick="location.href='./#catalogue'">
+            Voir le catalogue
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="new-arrivals-container">
+      <h1 class="new-arrivals__title">Nouveautés</h1>
+
+      <div class="new-arrivals__details">
+        <div class="new-arrivals__1">
+          <p class="new-arrivals__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, suscipit.</p>
+          <button class="btn-container btn-new-arrivals">Découvrir</button>
+        </div>
+        
+        <div class="new-arrivals__2">
+          <p class="new-arrivals__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores reprehenderit accusamus quaerat.</p>
+          <button class="btn-container btn-new-arrivals">Découvrir</button>
+        </div>
+
+        <div class="new-arrivals__3">
+          <p class="new-arrivals__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <button class="btn-container btn-new-arrivals">Découvrir</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+</html>
