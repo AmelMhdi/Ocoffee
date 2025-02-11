@@ -8,6 +8,11 @@
   header ul > :first-child {
       display: none;
   }
+
+  header ul {
+    display: flex;
+    gap: 2rem;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -39,6 +44,17 @@
   header ul {
     display: none;
   }
+
+  header button {
+    display: block;
+  }
+
+  header nav.expanded ul {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -52,12 +68,7 @@
   }
 
   #presentation-container img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    width: 90%;
-    margin: 0 auto 1rem;
+    display: none;
   }
 
   .section__title {
@@ -82,6 +93,4 @@
   .new-arrivals__text {
     padding: 0 1.5rem;
   }
-
- 
 }

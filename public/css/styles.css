@@ -1,5 +1,4 @@
 /* GENERAL */
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 :root {
@@ -38,7 +37,6 @@ ul {
 }
 
 /* HEADER */
-
 header {
   display: flex;
   justify-content: space-between;
@@ -64,11 +62,6 @@ header nav {
   color: var(--primary-color-3);
 }
 
-header ul {
-  display: flex;
-  gap: 2rem;
-}
-
 header li a {
   font-size: 1.3rem;
 }
@@ -77,13 +70,11 @@ header li a:hover {
   color: var(--background-dark-color);
 }
 
-/* ======== Header burger menu (on small screen) ======== */
-
+/* BURGER MENU ON SMALL SCREENS */
 header button {
   background-color: inherit;
   color: var(--primary-color-3);
   height: 3rem;
-
   padding: 0;
   border: none;
   cursor: pointer;
@@ -97,15 +88,12 @@ header nav.expanded {
   position: absolute;
   top: 0;
   right: 0;
-
   width: 80vw;
   height: 100%;
   padding: 4rem;
   gap: 2rem;
-
   color: var(--primary-color-3);
   background-color: var(--background-dark-color);
-
   animation: menu-slide-in 0.3s;
 }
 
@@ -114,14 +102,13 @@ header nav.expanded {
   from {
     width:  0vw;
     padding: 4rem 0rem;
-    color: var(--color-dark);
   }
 }
 
 header nav.expanded ul {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
   gap: 1rem;
 }
 
@@ -130,7 +117,6 @@ header nav.expanded a {
 }
 
 /* PRESENTATION CONTAINER */
-
 section {
   padding-top: 4vh;
   margin: 0 5rem;
@@ -169,7 +155,6 @@ section {
 }
 
 /* BUTTONS  */
-
 button {
   cursor: pointer;
 }
@@ -186,9 +171,7 @@ button {
   padding: 1rem 2rem;
 }
 
-
 /* NEW ARRIVALS */
-
 #new-arrivals-container {
   display: flex;
   flex-direction: column;
@@ -229,7 +212,6 @@ button {
 }
 
 /* CATALOGUE */
-
 #catalog h1 {
   padding: 4.5rem;
   background-image: url(../images/coffees/256505890.png);
@@ -283,13 +265,11 @@ button {
 }
 
 /* PRODUCT */
-
 #product h2 {
   padding: 2rem 0;
 }
 
 /* FOOTER */
-
 footer {
   padding: 2rem;
 }
@@ -301,7 +281,6 @@ footer p {
 }
 
 /* 404 */
-
 #error-container {
   display: flex;
   flex-direction: column;
@@ -317,5 +296,4 @@ footer p {
 #error-container p {
   font-size: 2rem;
   padding-bottom: 3rem;
-  
 }
