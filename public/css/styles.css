@@ -269,6 +269,11 @@ button a {
   color: var(--primary-color-2);
 }
 
+#error-container button {
+  padding: 1rem 2rem;
+  border: 1px solid var(--primary-color-2);
+}
+
 /* NEW ARRIVALS */
 
 #new-arrivals-container {
@@ -377,4 +382,40 @@ button a {
 
 .coffee-item strong {
   font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 2rem;
+}
+
+footer p {
+  font-weight: 600;
+  text-align: center;
+  color: var(--background-dark-color);
+}
+
+/* 404 */
+
+#error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+#error-container h1 {
+  color: var(--background-dark-color);
+  font-size: 3.5rem;
+}
+
+#error-container p {
+  font-size: 2rem;
+  
+}
+
+#error-container a {
+  text-decoration: none;
+  color: var(--primary-color-2);
 }

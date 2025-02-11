@@ -4,37 +4,42 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/mediaqueries.css">
+  <title>oCoffee</title>
+
+  <link rel="stylesheet" href="../public/css/mediaqueries.css">
+  <link rel="stylesheet" href="../public/css/normalize.css">
+  <link rel="stylesheet" href="../public/css/styles.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+  <script src="../js/script.js"></script>
 </head>
 <body>
-  <nav id="nav-bar">
-
-    <div class="logo-title">
-      <div class="nav-logo">
-        <img
-        src="../public/images/logo.svg"
-        alt="Logo oCoffe">
+  <header>
+    <nav id="nav-bar">
+      <div class="logo-title">
+        <div class="nav-logo">
+          <img
+          src="../public/images/logo.svg"
+          alt="Logo oCoffe">
+        </div>
+        <div class="nav-title">
+          <h1 class="nav-title">oCoffee</h1>
+        </div>
+      </div>  
+      
+      <div class="nav-links">
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#catalogue">Catalogue</a></li>
+          <li><a href="#boutique">Boutique</a></li>
+        </ul>
       </div>
-      <div class="nav-title">
-        <h1 class="nav-title">oCoffee</h1>
-      </div>
-    </div>  
-    
+    </nav>
+  </header>
 
-    <div class="nav-links">
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#catalogue">Catalogue</a></li>
-        <li><a href="#boutique">Boutique</a></li>
-      </ul>
-    </div>
-  </nav>
-
+<main>
   <nav id="hamburger-nav">
     <div class="hamburger__logo-title">
       <div class="hamburger__nav-logo">
@@ -68,9 +73,9 @@
       </div>
 
       <div class="section__text-container">
-        <h1 class="section__title">oCoffee</h1>
+        <h1 class="section__title">Votre spécialiste Haucloquois du café</h1>
         <p class="section__text__p">
-          Jean et Jacques Pepper, deux frères passionnés par le café, sont les fondateurs de notre boutique. Avec une expertise approfondie et un amour profond pour cette délicieuse boisson, ils ont créé un espace où le café est célébré comme une expérience raffinée et inspirante.
+          oCoffee est un détaillant de café et de produits associés à la consommation du café basé dans la ville de Hauts-de-Cloques. Nous importons nos produits directement des producteurs, et nous les sélectionnons selon des critères exigeants de qualité. oCoffee est reconnu à l’échelle départementale.
         </p>
         <div class="btn-container">
           <button
@@ -88,17 +93,17 @@
       <div class="new-arrivals__details">
         <div class="new-arrivals__1">
           <p class="new-arrivals__text">Panamanian Geisha, un café rare aux arômes floraux complexes, une acidité brillante et un profil de saveur distinctif.</p>
-          <button class="btn-container btn-new-arrivals">Découvrir</button>
+          <button class="btn-container btn-new-arrivals"><a href="#">Découvrir</a></button>
         </div>
         
         <div class="new-arrivals__2">
           <p class="new-arrivals__text">Rwandan Bourbon, un café avec des notes florales prononcées, une acidité vive et un corps moyen.</p>
-          <button class="btn-container btn-new-arrivals">Découvrir</button>
+          <button class="btn-container btn-new-arrivals"><a href="#">Découvrir</a></button>
         </div>
 
         <div class="new-arrivals__3">
           <p class="new-arrivals__text">Jamaican Blue Mountain, il est reconnu pour sa saveur douce, son acidité vive et son absence d'amertume.</p>
-          <button class="btn-container btn-new-arrivals">Découvrir</button>
+          <button class="btn-container btn-new-arrivals"><a href="#">Découvrir</a></button>
         </div>
       </div>
     </section>
@@ -354,8 +359,7 @@
   </main>
 
   <footer>
-
+    <p>O'Clock & Pepper Brothers - Tous droits réservés</p>
   </footer>
-  <script src="../js/script.js"></script>
 </body>
 </html>
