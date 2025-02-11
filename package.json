@@ -1,0 +1,35 @@
+{
+  "name": "s09-ocoffee-amelmhdi",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Site vitrine d'oCoffee",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Sushi/S09-ocoffee-AmelMhdi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-Sushi/S09-ocoffee-AmelMhdi/issues"
+  },
+  "homepage": "https://github.com/O-clock-Sushi/S09-ocoffee-AmelMhdi#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "eslint": "^9.20.0",
+    "globals": "^15.14.0"
+  }
+}
