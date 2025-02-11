@@ -24,6 +24,25 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  /* Hide "menu button" on large screen by default */
+  header button {
+      display: none;
+  }
+
+  /* Hide "Home link" on large screen by default */
+  header ul > :first-child {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  /* Hide all menu links on small screen by default */
+  header ul {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
   section {
     margin: 0 2%; 

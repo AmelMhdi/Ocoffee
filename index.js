@@ -25,12 +25,9 @@ app.get("/product", (req, res) => {
   res.render("product");
 });
 
-// app.get("/product/:coffeeName", (req, res) => {
-//   const coffee = coffeeData.find(coffee => coffee.name.toLowerCase() === req.params.coffeeName.toLowerCase());
-//   if (!coffee) {
-//     res.status(404).render("404");
-//   }
-// });
+app.get("/404", (req, res) => {
+  res.render("404");
+});
 
 app.listen(PORT, () =>  {
   console.log(`Le serveur est en cours d'exécution : http://localhost:${PORT}`);
