@@ -1,12 +1,11 @@
-@media screen and (max-width: 1400) {
+@media screen and (max-width: 1280px) {
   #presentation-container {
     flex-wrap: wrap;
     flex-direction: column;
   }
 
   #presentation-container img {
-    width: 80%; 
-    margin: 0 auto; 
+    display: none;
   }
 
   .section__text-container {
@@ -15,6 +14,7 @@
 
   .new-arrivals__details {
     flex-direction: column;
+    gap: 2rem;
   }
 
   .new-arrivals__1,
@@ -25,22 +25,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  #nav-bar {
-    display: none;
-  }
-
-  #hamburger-nav {
-    display: flex; 
-    /* justify-content: space-between; */
-    /* padding: 10px 20px; */
-    /* background-color: var(--background-dark-color); */
-  }
-
-  .hamburger__nav-title{
-    font-size: 2.5rem;
-    font-family: "Orelega One", serif;
-  }
-
   section {
     margin: 0 2%; 
     padding-top: 2vh;
@@ -52,6 +36,7 @@
 
   #presentation-container img {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center; 
     width: 90%;
@@ -67,10 +52,6 @@
     padding: 1rem;
   }
 
-  .section__text__p {
-    padding: 0;
-  }
-
   .btn-container {
     flex-direction: column; 
     align-items: stretch;
@@ -78,28 +59,12 @@
 
   .new-arrivals__details {
     flex-direction: column;
+    gap: 1.5rem;
   }
 
   .new-arrivals__text {
     padding: 0 1.5rem;
   }
 
-  .new-arrivals__1,
-  .new-arrivals__2,
-  .new-arrivals__3 {
-    padding: 2.5rem 0;
-    margin: 1rem 0;
-    background-color: var(--background-items-color);
-    border-radius: .5rem;
-  }
-
-  .coffee-list .coffee-item:nth-child(n+4) {
-    display: none;
-  }
-
-  .display-all-btn {
-    display: block;
-    margin: 1.5rem auto;
-    padding: 1rem 2rem;
-  }
+ 
 }

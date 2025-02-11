@@ -1,0 +1,51 @@
+<%- include("partials/header") %>
+
+  <main id="presentation">
+
+    <section id="presentation-container">
+      <div class="section__pic-container">
+        <img src="/images/about.jpg" alt="Photo de tasses de café alignées en cercle">
+      </div>
+
+      <div class="section__text-container">
+        <h1 class="section__title">Votre spécialiste Haucloquois du café</h1>
+        <p class="section__text__p">
+          oCoffee est un détaillant de café et de produits associés à la consommation du café basé dans la ville de Hauts-de-Cloques. Nous importons nos produits directement des producteurs, et nous les sélectionnons selon des critères exigeants de qualité. oCoffee est reconnu à l’échelle départementale.
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn-container btn-catalogue"
+            onclick="location.href='/catalogue'">
+            Voir le catalogue
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="new-arrivals-container">
+      <h1 class="new-arrivals__title">Nouveautés</h1>
+
+      <div class="new-arrivals__details">
+        <div class="new-arrivals__1">
+          <img src="/images/coffees/795501340.png" alt="coffee beans">
+          <p class="new-arrivals__text">Panamanian Geisha, un café rare aux arômes floraux complexes, une acidité brillante et un profil de saveur distinctif.</p>
+          <button class="btn-container btn-new-arrivals"><a href="#">Découvrir</a></button>
+        </div>
+        
+        <div class="new-arrivals__2">
+          <img src="/images/coffees/650753915.png" alt="coffee beans">
+          <p class="new-arrivals__text">Rwandan Bourbon, un café avec des notes florales prononcées, une acidité vive et un corps moyen.</p>
+          <button class="btn-container btn-new-arrivals"><a href="#">Découvrir</a></button>
+        </div>
+
+        <div class="new-arrivals__3">
+          <img src="/images/coffees/589100954.png" alt="coffee beans">
+          <p class="new-arrivals__text">Jamaican Blue Mountain, il est reconnu pour sa saveur douce, son acidité vive et son absence d'amertume.</p>
+          <button class="btn-container btn-new-arrivals"><a href="#">Découvrir</a></button>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+<%- include('partials/footer') %>
