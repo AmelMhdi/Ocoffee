@@ -7,11 +7,7 @@ function displayArticles() {
   seeAllButton.addEventListener("click", () => {
     articlesList.forEach((article => {
       article.style.display = "block";
-    }))
-    // articlesList.classList.remove("none");
-   
+    }));  
     seeAllButton.style.display = "none";
    })
-
-
 };

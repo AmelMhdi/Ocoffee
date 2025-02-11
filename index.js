@@ -1,6 +1,7 @@
 import "dotenv/config";
 import path from "node:path";
 import express from "express";
+import client from './database.js';
 
 // Configuration
 const PORT = process.env.PORT || 3000;
