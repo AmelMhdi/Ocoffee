@@ -3,17 +3,20 @@ import dataMapper from "../data-mapper.js";
 const mainController = {
   async renderHomePage(req, res) {
     try {
-      const allCoffeeData = await dataMapper.getAllCoffeeData();
+      const latestCoffeeArticles = await dataMapper.getLatestCoffeeArticles();
       
-      res.render("home", { allCoffeeData });
+      console.log("latest coffees:", latestCoffeeArticles);
+
+      res.render("home", { latestCoffeeArticles });
     } catch (error) {
       console.error(error);
-      res.status(500).send("Une erreur s'est produite.");
+      res.render("home", { latestCoffeeArticles: [] });
     }
   },
-
-  renderCatalogPage(req, res) {
-    res.render("catalog");
+  
+  async renderCatalogPage(req, res) {
+    const allCoffeeData = await dataMapper.getAllCoffeeData();
+    res.render("catalog", { allCoffeeData });
   },
 
   async renderCoffeeDetailsPage(req, res) {

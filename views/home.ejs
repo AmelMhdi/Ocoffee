@@ -23,23 +23,14 @@
       <h1 class="new-arrivals__title">Nouveautés</h1>
 
       <div class="new-arrivals__details">
-        <div class="new-arrivals__1">
-          <img src="/images/coffees/795501340.png" alt="coffee beans">
-          <p class="new-arrivals__text">Panamanian Geisha, un café rare aux arômes floraux complexes, une acidité brillante et un profil de saveur distinctif.</p>
-          <button class="btn-container btn-new-arrivals"><a href="/article/:id">Découvrir</a></button>
-        </div>
-        
-        <div class="new-arrivals__2">
-          <img src="/images/coffees/650753915.png" alt="coffee beans">
-          <p class="new-arrivals__text">Rwandan Bourbon, un café avec des notes florales prononcées, une acidité vive et un corps moyen.</p>
-          <button class="btn-container btn-new-arrivals"><a href="#">Découvrir</a></button>
-        </div>
 
-        <div class="new-arrivals__3">
-          <img src="/images/coffees/589100954.png" alt="coffee beans">
-          <p class="new-arrivals__text">Jamaican Blue Mountain, il est reconnu pour sa saveur douce, son acidité vive et son absence d'amertume.</p>
-          <button class="btn-container btn-new-arrivals"><a href="#">Découvrir</a></button>
-        </div>
+        <% latestCoffeeArticles.forEach((coffee, index) => { %>
+          <div class="new-arrivals__<%= index + 1 %>">
+            <img src="/images/coffees/<%= coffee.reference %>.png" alt="<%= coffee.name %>">
+            <p class="new-arrivals__text"><%= coffee.description %></p>
+            <button class="btn-container btn-new-arrivals"><a href="/article/<%= coffee.id %>">Découvrir</a></button>
+          </div>
+          <% }) %>
       </div>
     </section>
     
