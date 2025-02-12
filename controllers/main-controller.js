@@ -13,21 +13,18 @@ const mainController = {
   },
 
   renderCatalogPage(req, res) {
-    res.render("catalog");
+    res.render("catalog", { isCatalogPage: true });
   },
 
   async renderCoffeeDetailsPage(req, res) {
     try {
       const coffeeId = req.params.id;
-      console.log("coffeeId:", coffeeId);
-
       const oneCoffeeArticle = await dataMapper.getOneCoffeeArticle(coffeeId);
       
       if (! oneCoffeeArticle) {
         return res.status(404).render("404");
       }
       
-      console.log("oneCoffeeArticle:", oneCoffeeArticle);
       res.render("article", { oneCoffeeArticle });
     } catch (error) {
       console.error(error);
