@@ -4,7 +4,7 @@ const mainController = {
   async renderHomePage(req, res) {
     try {
       const allCoffeeData = await dataMapper.getAllCoffeeData();
-      console.log(allCoffeeData);
+
       res.render("home", { allCoffeeData });
     } catch (error) {
       console.error(error);
@@ -16,8 +16,23 @@ const mainController = {
     res.render("catalog");
   },
 
-  renderCoffeeDetailsPage(req, res) {
-    res.render("article");
+  async renderCoffeeDetailsPage(req, res) {
+    try {
+      const coffeeId = req.params.id;
+      console.log("coffeeId:", coffeeId);
+
+      const oneCoffeeArticle = await dataMapper.getOneCoffeeArticle(coffeeId);
+      
+      if (! oneCoffeeArticle) {
+        return res.status(404).render("404");
+      }
+      
+      console.log("oneCoffeeArticle:", oneCoffeeArticle);
+      res.render("article", { oneCoffeeArticle });
+    } catch (error) {
+      console.error(error);
+      res.status(500).send("Une erreur s'est produite.");
+    }
   }
 };
 

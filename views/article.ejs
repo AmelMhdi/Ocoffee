@@ -2,15 +2,15 @@
 
   <section id="product">
     <article>
-      <img src="../images/coffees/295432730.png" alt="Nicaraguan Maragogipe">
+      <img src="../images/coffees/<%= oneCoffeeArticle.reference %>.png" alt="<%= oneCoffeeArticle.name %>">
       <div>
-        <h2>Nicaraguan Maragogipe</h2>
-        <p><strong>Description:</strong> Café avec des notes de fruits, une acidité vive et un corps plein.</p>
-          <p><strong>Référence:</strong> 691550753</p>
-          <p><strong>Origine:</strong> Nicaragua</p>
-          <p><strong>Prix au kilo:</strong> 28.60 €</p>
-          <p><strong>Caractéristique principale:</strong> Fruité</p>
-          <p><strong>Disponible:</strong> Non</p>
+        <h2><%= oneCoffeeArticle.name %></h2>
+        <p><strong>Description:</strong> <%= oneCoffeeArticle.description %></p>
+          <p><strong>Référence:</strong> <%= oneCoffeeArticle.reference %></p>
+          <p><strong>Origine:</strong> <%= oneCoffeeArticle.origin %></p>
+          <p><strong>Prix au kilo:</strong> <%= oneCoffeeArticle.price_kg %></p>
+          <p><strong>Caractéristique principale:</strong> <%= oneCoffeeArticle.caracteristic %></p>
+          <p><strong>Disponible:</strong> <%= oneCoffeeArticle.availability %></p>
       </div>
     </article>
     <a href="/catalog" class="btn-container btn-homepage">Retour au catalogue</a>
