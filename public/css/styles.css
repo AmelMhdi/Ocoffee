@@ -116,7 +116,7 @@ header nav.expanded a {
   color: inherit;
 }
 
-/* PRESENTATION CONTAINER */
+/* PRESENTATION */
 section {
   padding-top: 4vh;
   margin: 0 5rem;
@@ -171,6 +171,10 @@ button {
   padding: 1rem 2rem;
 }
 
+#product .btn-homepage {
+  background-color: var(--primary-color-3);
+}
+
 /* NEW ARRIVALS */
 #new-arrivals-container {
   display: flex;
@@ -223,7 +227,7 @@ button {
 
 #catalog .articles, #product article {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); /* https://css-tricks.com/a-responsive-grid-layout-with-no-media-queries/ */
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   gap: 1.5rem;
   margin-top: 5rem;
 }
@@ -291,9 +295,11 @@ footer p {
 
 #error-container h1 {
   font-size: 3.5rem;
+  margin: .5em 0;
 }
 
 #error-container p {
   font-size: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
+

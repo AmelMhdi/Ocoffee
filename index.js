@@ -1,35 +1,20 @@
 import "dotenv/config";
-import path from "node:path";
 import express from "express";
-import client from './database.js';
+import path from "node:path";
+import router from './router.js';
 
-// Configuration
-const PORT = process.env.PORT || 3000;
 const app = express();
 
-// Configuration moteur rendu (EJS)
 app.set("view engine", "ejs");
-app.set("views", path.join(process.cwd(), "./views"));
+app.set("views", "./views");
 
-// Configurer un dossier d'assets statiques
-app.use(express.static(path.join(process.cwd(), 'public')));
+app.use(express.static(path.join(import.meta.dirname, "public")));
 
-app.get("/", (req, res) => {
-  res.render("home");
-});
+app.use("/favicon.ico", express.static("./public/images/logo.svg"));
 
-app.get("/catalogue", (req, res) => {
-  res.render("catalogue");
-});
+app.use(router);
 
-app.get("/product", (req, res) => {
-  res.render("product");
-});
-
-app.get("/404", (req, res) => {
-  res.render("404");
-});
-
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () =>  {
   console.log(`Le serveur est en cours d'exécution : http://localhost:${PORT}`);
 });
