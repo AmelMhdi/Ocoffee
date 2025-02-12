@@ -5,6 +5,20 @@
     <h1>Notre catalogue</h1>
 
     <div class="articles only-display-3-articles" id="articles-list">
+      <% latestCoffeeArticles.forEach((coffee) => { %>
+        <article>
+          <img src="../images/coffees/<%= coffee.reference %>.png" alt="<%= coffee.name %>">
+          <div>
+            <h2><%= coffee.name %></h2>
+            <p>Origine <%= coffee.origin %></p>
+            <p><%= coffee.price_kg %></p>
+            <a class="button-outline" href="/article/<%= coffee.id %>">Voir le détail</a>
+          </div>
+        </article>
+      <% }) %>
+    </div>
+
+<!-- 
       <article>
         <img src="../images/coffees/295432730.png" alt="Sumatra Mandheling">
         <div>
@@ -74,7 +88,7 @@
           <a class="button-outline" href="#">Voir le détail</a>
         </div>
       </article>
-    </div>
+    </div> -->
 
     <button class="btn-container" id="see-all-products-button">Voir tous les produits</button>
   </section>

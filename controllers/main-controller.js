@@ -4,9 +4,6 @@ const mainController = {
   async renderHomePage(req, res) {
     try {
       const latestCoffeeArticles = await dataMapper.getLatestCoffeeArticles();
-      
-      console.log("latest coffees:", latestCoffeeArticles);
-
       res.render("home", { latestCoffeeArticles });
     } catch (error) {
       console.error(error);
@@ -16,7 +13,8 @@ const mainController = {
   
   async renderCatalogPage(req, res) {
     const allCoffeeData = await dataMapper.getAllCoffeeData();
-    res.render("catalog", { allCoffeeData });
+    const latestCoffeeArticles = await dataMapper.getLatestCoffeeArticles();
+    res.render("catalog", { allCoffeeData, isCatalogPage: true, latestCoffeeArticles });
   },
 
   async renderCoffeeDetailsPage(req, res) {

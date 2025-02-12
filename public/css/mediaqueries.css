@@ -67,7 +67,7 @@
     }
 }
 
-@media screen and (min-width: 800px) (max-width: 815px) {
+@media screen and (min-width: 800px) and (max-width: 815px) {
   #product article img {
   height: 12rem;
   width: 100%;
@@ -78,7 +78,7 @@
 
   #catalog .articles, #product article {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   margin-top: 2rem;
   }
 
