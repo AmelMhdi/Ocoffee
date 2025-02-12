@@ -12,5 +12,5 @@ function displayArticles() {
       article.style.display = "block";
     });  
     seeAllButton.style.display = "none";
-   })
+   });
 };

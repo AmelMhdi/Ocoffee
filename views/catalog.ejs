@@ -5,7 +5,7 @@
     <h1>Notre catalogue</h1>
 
     <div class="articles only-display-3-articles" id="articles-list">
-      <% latestCoffeeArticles.forEach((coffee) => { %>
+      <% allCoffeeData.forEach((coffee) => { %>
         <article>
           <img src="../images/coffees/<%= coffee.reference %>.png" alt="<%= coffee.name %>">
           <div>
@@ -17,78 +17,6 @@
         </article>
       <% }) %>
     </div>
-
-<!-- 
-      <article>
-        <img src="../images/coffees/295432730.png" alt="Sumatra Mandheling">
-        <div>
-          <h2>Sumatra Mandheling 1</h2>
-          <p>Origine Indonésie</p>
-          <p>25,99 €/kg</p>
-          <a class="button-outline" href="#">Voir le détail</a>
-        </div>
-      </article>
-
-      <article>
-        <img src="../images/coffees/295432730.png" alt="Sumatra Mandheling">
-        <div>
-          <h2>Sumatra Mandheling</h2>
-          <p>Origine Indonésie</p>
-          <p>25,99 €/kg</p>
-          <a class="button-outline" href="#">Voir le détail</a>
-        </div>
-      </article>
-
-      <article>
-        <img src="../images/coffees/295432730.png" alt="Sumatra Mandheling">
-        <div>
-          <h2>Sumatra Mandheling</h2>
-          <p>Origine Indonésie</p>
-          <p>25,99 €/kg</p>
-          <a class="button-outline" href="#">Voir le détail</a>
-        </div>
-      </article>
-
-      <article>
-        <img src="../images/coffees/295432730.png" alt="Sumatra Mandheling">
-        <div>
-          <h2>Sumatra Mandheling</h2>
-          <p>Origine Indonésie</p>
-          <p>25,99 €/kg</p>
-          <a class="button-outline" href="#">Voir le détail</a>
-        </div>
-      </article>
-
-      <article>
-        <img src="../images/coffees/295432730.png" alt="Sumatra Mandheling">
-        <div>
-          <h2>Sumatra Mandheling</h2>
-          <p>Origine Indonésie</p>
-          <p>25,99 €/kg</p>
-          <a class="button-outline" href="#">Voir le détail</a>
-        </div>
-      </article>
-
-      <article>
-        <img src="../images/coffees/295432730.png" alt="Sumatra Mandheling">
-        <div>
-          <h2>Sumatra Mandheling</h2>
-          <p>Origine Indonésie</p>
-          <p>25,99 €/kg</p>
-          <a class="button-outline" href="#">Voir le détail</a>
-        </div>
-      </article>
-
-      <article>
-        <img src="../images/coffees/295432730.png" alt="Sumatra Mandheling">
-        <div>
-          <h2>Sumatra Mandheling</h2>
-          <p>Origine Indonésie</p>
-          <p>25,99 €/kg</p>
-          <a class="button-outline" href="#">Voir le détail</a>
-        </div>
-      </article>
-    </div> -->
 
     <button class="btn-container" id="see-all-products-button">Voir tous les produits</button>
   </section>

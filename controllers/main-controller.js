@@ -12,9 +12,14 @@ const mainController = {
   },
   
   async renderCatalogPage(req, res) {
+    try {
     const allCoffeeData = await dataMapper.getAllCoffeeData();
-    const latestCoffeeArticles = await dataMapper.getLatestCoffeeArticles();
-    res.render("catalog", { allCoffeeData, isCatalogPage: true, latestCoffeeArticles });
+    
+    res.render("catalog", { allCoffeeData, isCatalogPage: true });
+    } catch (error) {
+      console.error(error);
+      res.status(500).send("Une erreur s'est produite.");
+    }
   },
 
   async renderCoffeeDetailsPage(req, res) {
