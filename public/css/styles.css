@@ -173,6 +173,7 @@ button {
 
 #product .btn-homepage {
   background-color: var(--primary-color-3);
+  margin-top: 3rem;
 }
 
 /* NEW ARRIVALS */
@@ -228,7 +229,7 @@ button {
 #catalog .articles, #product article {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
   margin-top: 5rem;
 }
 
@@ -241,6 +242,10 @@ button {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 0.5rem;
   background-color: var(--button-background-color);
+}
+
+#product div {
+  padding: 0 2rem 1rem;
 }
 
 #catalog article img {
@@ -268,7 +273,7 @@ button {
   margin: 2rem auto 0 auto;
 }
 
-/* PRODUCT */
+/* PRODUCT (article.ejs) */
 #product h2 {
   padding: 2rem 0;
 }

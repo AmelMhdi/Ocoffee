@@ -57,6 +57,36 @@
   }
 }
 
+@media screen and (min-width: 816px) {
+  #product article img {
+    height: 21rem;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 800px) (max-width: 815px) {
+  #product article img {
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  }
+
+  #catalog .articles, #product article {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  margin-top: 2rem;
+  }
+
+  #section {
+    padding-top: 0;
+  }
+}
+
 @media screen and (max-width: 600px) {
   section {
     margin: 0 2%; 
