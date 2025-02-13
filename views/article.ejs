@@ -8,9 +8,9 @@
         <p><strong>Description:</strong> <%= oneCoffeeArticle.description %></p>
         <p><strong>Référence:</strong> <%= oneCoffeeArticle.reference %></p>
         <p><strong>Origine:</strong> <%= oneCoffeeArticle.origin %></p>
-        <p><strong>Prix au kilo:</strong> <%= oneCoffeeArticle.price_kg %></p>
+        <p><strong>Prix au kilo:</strong> <%= oneCoffeeArticle.price_per_kg %> €</p>
         <p><strong>Caractéristique principale:</strong> <%= oneCoffeeArticle.caracteristic %></p>
-        <p><strong>Disponible:</strong> <%= oneCoffeeArticle.availability %></p>
+        <p><strong>Disponible:</strong> <%= oneCoffeeArticle.availability ? 'Oui' : 'Non' %></p>
       </div>
     </article>
     <a href="/catalog" class="btn-container btn-homepage">Retour au catalogue</a>

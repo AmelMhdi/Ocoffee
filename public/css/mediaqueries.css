@@ -1,43 +1,32 @@
 @media screen and (min-width: 1280px) {
   /* Hide "menu button" on large screen by default */
   header button {
-      display: none;
-  }
-
-  /* Hide "Home link" on large screen by default */
-  header ul > :first-child {
-      display: none;
+    display: none;
   }
 
   header ul {
     display: flex;
     gap: 2rem;
   }
+
+  #product article img {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
 }
 
-@media screen and (max-width: 1280px) {
-  #presentation-container {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
+@media screen and (max-width: 1279px) {
   #presentation-container img {
     display: none;
   }
 
-  .section__text-container {
-    padding: 2rem;
+  #presentation-container {
+    padding: 3rem;
   }
 
   .new-arrivals__details {
     flex-direction: column;
     gap: 2rem;
-  }
-
-  .new-arrivals__1,
-  .new-arrivals__2,
-  .new-arrivals__3 {
-    margin: 1rem 0;
   }
 
   /* Hide all menu links on small screen by default */
@@ -55,72 +44,43 @@
     align-items: end;
     gap: 1rem;
   }
+
+  #product article {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
 }
 
-@media screen and (min-width: 816px) {
-  #product article img {
-    height: 21rem;
+@media screen and (max-width: 1278px) {
+  #catalog .articles {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #articles-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  #articles-list article {
     width: 100%;
-    object-fit: cover;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-    }
-}
-
-@media screen and (min-width: 800px) and (max-width: 815px) {
-  #product article img {
-  height: 12rem;
-  width: 100%;
-  object-fit: cover;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  }
-
-  #catalog .articles, #product article {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-  margin-top: 2rem;
-  }
-
-  #section {
-    padding-top: 0;
   }
 }
 
-@media screen and (max-width: 600px) {
-  section {
-    margin: 0 2%; 
-    padding-top: 2vh;
+@media screen and (max-width: 450px) {
+  #articles-list.only-display-3-articles {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
   }
 
-  #presentation-container {
-    flex-direction: column;
-  }
-
-  #presentation-container img {
-    display: none;
-  }
-
-  .section__title {
-    text-align: center;
-  }
-
-  .section__text-container {
-    text-align: left;
-    padding: 1rem;
-  }
-
-  .btn-container {
-    flex-direction: column; 
-    align-items: stretch;
-  }
-
-  .new-arrivals__details {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .new-arrivals__text {
-    padding: 0 1.5rem;
+  #articles-list.only-display-3-articles article {
+    width: 100%;
   }
 }

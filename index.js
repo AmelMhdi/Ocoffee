@@ -8,7 +8,7 @@ const app = express();
 app.set("view engine", "ejs");
 app.set("views", "./views");
 
-app.use(express.static(path.join(import.meta.dirname, "public")));
+app.use(express.static("./public"));
 
 app.use("/favicon.ico", express.static("./public/images/logo.svg"));
 

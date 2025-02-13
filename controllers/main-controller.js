@@ -39,6 +39,16 @@ const mainController = {
       console.error(error);
       res.status(500).send("Une erreur s'est produite.");
     }
+  },
+
+  renderShopPage(req, res) {
+    try {
+      res.render("shop");
+
+    } catch (error) {
+      console.error(error);
+      res.status(404).render("404");
+    }
   }
 };
 
