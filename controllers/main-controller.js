@@ -43,8 +43,7 @@ const mainController = {
 
   renderShopPage(req, res) {
     try {
-      res.render("shop");
-
+      res.render("shop")
     } catch (error) {
       console.error(error);
       res.status(404).render("404");

@@ -13,6 +13,13 @@
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
   }
+
+  #shop-container .shop-image img {
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 1279px) {
@@ -49,6 +56,13 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+  }
+
+  #shop-container .shop-image img {
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
   }
 }
 
