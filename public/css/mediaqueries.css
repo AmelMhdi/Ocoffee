@@ -1,5 +1,4 @@
 @media screen and (min-width: 1280px) {
-  /* Hide "menu button" on large screen by default */
   header button {
     display: none;
   }
@@ -14,7 +13,7 @@
     border-top-right-radius: 0.5rem;
   }
 
-  #shop-container .shop-image img {
+  #shop-container .shop-location img {
     max-width: 900px;
     width: 100%;
     height: auto;
@@ -58,7 +57,7 @@
     overflow: hidden;
   }
 
-  #shop-container .shop-image img {
+  #shop-container .shop-location img {
     max-width: 900px;
     width: 100%;
     height: auto;

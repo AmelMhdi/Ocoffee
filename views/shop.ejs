@@ -6,18 +6,26 @@
       <p class="shop-container__p">Passez nous voir ou laissez-nous un message :</p>
     </div>
 
-    <div class="shop-image">  
-      <img src="https://www.w3schools.com/w3images/map.jpg">
+    <div class="shop-location">  
+      <img class="shop-map" src="https://www.w3schools.com/w3images/map.jpg">
+        <ul class="shop-address">
+          <h2>Adresse :</h2>
+          <li>Rue</li>
+          <li>Ville</li>
+          <li>Code postal</li>
+          <li>Numéro de téléphone</li>
+        </ul>
     </div>
       
     <div class="shop-form">
-      <form action="" method="GET" class="shop-form__input">
+      <h2>Votre message :</h2>
+      <form action="/shop" method="POST" class="shop-form__input">
         <label for="fname">Prénom</label>
         <input type="text" id="fname" name="firstname" placeholder="Votre prénom">
         <label for="lname">Nom</label>
         <input type="text" id="lname" name="lastname" placeholder="Votre nom">
         <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Votre message" style="height:170px"></textarea>
+        <textarea id="message" name="message" placeholder="Votre message"></textarea>
         <input type="submit" value="Envoyer" class="btn-container">
       </form>
     </div>
